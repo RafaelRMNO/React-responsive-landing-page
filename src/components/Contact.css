@@ -1,0 +1,22 @@
+.contact{
+	background-color:#35373a;
+	display: flex;
+	flex-direction: column	;
+	align-items: flex-start;
+	height: 70px;
+
+}
+
+
+.Contact-container{
+	flex-direction: row;
+}
+
+.contact svg{
+	padding: 6px;
+	animation: normal;
+}
+
+.contact svg:hover{
+	color: orange;
+}

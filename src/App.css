@@ -1,5 +1,13 @@
+
+
 .App {
   text-align: center;
+  min-width: 300px;
+}
+
+i.icon{
+	height: 25px;
+	color: orange;
 }
 
 .App-logo {
@@ -28,11 +36,138 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+section{
+	display: block;
+	align-items: center;
+}
+
+ul{
+	display: block;
+	padding: 15px 10px 0px 0px;
+}
+
+.navi{
+	display: flex;
+	flex-direction: row;
+	background-color: #35373a;
+	color: rgb(255, 255, 255);
+	align-items:center;
+	margin: auto;
+	padding: 0px 15px;
+	justify-content: space-between;
+	min-width: 300px;
+}
+
+.nav-item{
+	padding: 0.4em;
+	
+	cursor: pointer;
+	font-family:'Poppins';
+	font-weight:10;
+	text-decoration: none;
+	color: white;
+	
+}
+
+.nav-item:hover{
+	color: orange;
+}
+
+
+
+.icon{
+display: flex;
+flex-direction: row;
+padding: auto;
+margin: 10px 10px 17px 10px;
+}	
+
+
+
+#mobile-icon{
+	display:none;
+}
+
+.mobile-div{
+	display: block;
+}
+
+.mobile-ul{
+	display:none;
+}
+
+
+i{
+	
+	color: #211eda;
+	}
+
+	
+
+@media(max-width:450px) {
+	
+
+
+	nav.navi{
+		min-width: 350px;
+		padding: 0px;
+		margin: 0px;
+	}
+
+	.nav-item{
+		offset: 500;
+	}
+
+
+	.navi{
+		align-items: center;
+		flex-wrap: wrap;
+		
+	}
+
+	#mobile-icon{
+		display: block;
+		flex-direction: row-reverse;
+		padding-right: 20px;
+	}
+
+	svg{
+		height: 26px;
+		width: 26px;
+	}
+
+	.standart-ul{
+		display: none;
+
+	}
+
+	.mobile-div{
+		padding-top: 25px;
+		flex-direction: row-reverse;
+		width: 400px;
+		height: 300px;
+		background-color:#282c34;
+	}
+
+	.mobile-ul{
+		display:block;
+	}
+
+	.mobile-item{
+		display:flex;
+		flex-direction:column;
+		cursor: pointer;
+		font-family:'Poppins';
+		font-size: larger;
+		font-weight:500;
+		text-decoration: none;
+		color: white;
+		padding: 10px;
+
+	}
+
+	
+
 }
